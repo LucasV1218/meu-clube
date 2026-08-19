@@ -1,34 +1,24 @@
 <!DOCTYPE html> 
 
 <html lang="pt-BR"> 
-
 <head> 
-
-    <link rel="stylesheet" href="style.css">
-
     <meta charset="UTF-8"> 
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
     <title>Oportuni — As melhores oportunidades perto de você</title> 
-
+    <link rel="stylesheet" href="css/style.css">
 </head> 
 
-<body> 
-
-    <!-- CABEÇALHO: logo + navegação --> 
+  <body> 
 
     <header> 
 
-        <img src="img/logo.png" alt="Logo do Oportuni" width="200"> 
+        <img src="logo.png" alt="Logo do Oportuni"> 
 
-        <h1>Oportuni</h1> 
+  
 
         <p>As melhores oportunidades perto de você</p> 
 
         <nav> 
-
-            <!-- menu vai aqui --> 
 
             <a href="#inicio">Início</a> 
 
@@ -40,17 +30,22 @@
 
             <a href="#contato">Contato</a> 
 
-     
-
         </nav> 
 
     </header> 
 
-        <!-- CONTEÚDO PRINCIPAL --> 
+  
 
+   
     <main> 
 
-        <!-- Seção 1: chamada principal (hero) --> 
+  
+
+        <!-- ---------- SEÇÃO HERO (chamada principal) ---------- 
+
+             <section> agrupa um bloco de conteúdo com um tema. 
+
+             O id="inicio" permite que o menu aponte para cá. --> 
 
         <section id="inicio"> 
 
@@ -66,16 +61,28 @@
 
             </p> 
 
-            <img src="img/city.png" alt="Cidade cheia de oportunidades perto de você" width="600"> 
+  
+
+            <img src="hero.png" 
+        
+
+                 alt="Cidade cheia de oportunidades perto de você"> 
+
+  
+
+            <!-- Este link também é âncora: leva à seção de categorias --> 
 
             <a href="#categorias">Explorar oportunidades</a> 
 
         </section> 
 
- 
- 
+  
 
-        <!-- Seção 2: como funcuiona --> 
+        <!-- ---------- SEÇÃO COMO FUNCIONA ---------- 
+
+             Usamos <ol> (lista ORDENADA) porque a ordem dos passos 
+
+             importa: primeiro, segundo, terceiro. --> 
 
         <section id="como-funciona"> 
 
@@ -93,27 +100,35 @@
 
         </section> 
 
- 
- 
+  
 
-        <!-- Seção 3: categorias --> 
+        <!-- ---------- SEÇÃO CATEGORIAS ---------- 
+
+             Cada <article> é um conteúdo INDEPENDENTE — faz sentido 
+
+             sozinho. Por isso usamos article, não div. --> 
 
         <section id="categorias"> 
 
-            <!-- cards de categoria --> 
-
             <h2>Categorias</h2> 
 
- 
- 
+  
 
             <article> 
 
-                <h3>🍽️ Gastronomia</h3> 
+                <!-- 
+
+                  <figure> agrupa uma imagem com sua legenda. 
+
+                  <figcaption> é a legenda da figura. 
+
+                --> 
 
                 <figure> 
 
-                    <img src="img/plate.png" alt="Prato de comida deliciosa" width="200"> 
+                    <img src="gastronomia.png" 
+
+                         alt="Prato de comida com talheres"> 
 
                     <figcaption>🍽️ Gastronomia</figcaption> 
 
@@ -123,16 +138,15 @@
 
             </article> 
 
- 
- 
+  
 
             <article> 
 
-                <h3>🎭 Experiências</h3> 
-
                 <figure> 
 
-                    <img src="img/ticket.png" alt="Pessoas curtindo um show" width="200"> 
+                    <img src="experiencias.png" 
+
+                         alt="Ingresso com estrela para eventos e experiências"> 
 
                     <figcaption>🎭 Experiências</figcaption> 
 
@@ -142,16 +156,15 @@
 
             </article> 
 
- 
- 
+  
 
             <article> 
 
-                <h3>💆 Serviços</h3> 
-
                 <figure> 
 
-                    <img src="img/heart.png" alt="Pessoa recebendo massagem" width="200"> 
+                    <img src="servicos.png" 
+
+                         alt="Coração representando cuidado e bem-estar"> 
 
                     <figcaption>💆 Serviços</figcaption> 
 
@@ -163,19 +176,19 @@
 
         </section> 
 
- 
- 
+  
 
-        <!-- Seção 4: depoimentos --> 
+        <!-- ---------- SEÇÃO DEPOIMENTOS ---------- 
+
+             <blockquote> marca uma CITAÇÃO — uma fala de outra pessoa. 
+
+             Leitores de tela anunciam como citação. --> 
 
         <section id="depoimentos"> 
 
-            <!-- avaliações --> 
-
             <h2>O que dizem sobre o Oportuni</h2> 
 
- 
- 
+  
 
             <article> 
 
@@ -191,70 +204,117 @@
 
             </article> 
 
- 
- 
+  
 
             <article> 
 
                 <blockquote> 
 
-                    <strong>Como dono de um pequeno negócio, o Oportuni me trouxe 
+                    Como dono de um pequeno negócio, o Oportuni me trouxe 
 
-                    clientes nos horários que antes ficavam vazios.</strong> 
+                    clientes nos horários que antes ficavam vazios. 
 
                 </blockquote> 
 
                 <p>— Bruno, parceiro Oportuni</p> 
 
-            </article>         
+            </article> 
 
         </section> 
 
- 
- 
+  
+
+        <!-- ---------- SEÇÃO CONTATO (formulário) ---------- 
+
+             <form> cria um formulário — a forma do usuário FALAR com 
+
+             o sistema. 
+
+             action="#" → para onde os dados vão (ainda sem back-end). 
+
+             method="post" → como enviar (post = dados ocultos na requisição). --> 
 
         <section id="contato"> 
 
             <h2>Quer fazer parte do Oportuni?</h2> 
 
-            <p>Deixsa seu contato e a gente retorna com as melhores oprtunidades.</p> 
+            <p>Deixe seu contato e a gente retorna com as melhores oportunidades.</p> 
 
-             
+  
 
             <form action="#" method="post"> 
 
-                <label for="nome">Nome Completo</label> 
+  
 
-                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required> 
+                <!-- 
 
-                 
+                  O par <label> + <input> é OBRIGATÓRIO por acessibilidade. 
+
+                  O atributo for do label deve ser IGUAL ao id do input. 
+
+                  Assim, clicar no rótulo foca o campo. 
+
+                --> 
+
+                <label for="nome">Nome completo</label> 
+
+                <!-- 
+
+                  type="text"    → campo de texto livre 
+
+                  placeholder    → texto de dica (some ao digitar) 
+
+                  required       → torna o campo obrigatório 
+
+                --> 
+
+                <input type="text" id="nome" name="nome" 
+
+                       placeholder="Digite seu nome" required> 
+
+  
 
                 <label for="email">E-mail</label> 
 
-                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required> 
+                <!-- type="email" faz o navegador validar o formato (exige @) --> 
 
- 
- 
+                <input type="email" id="email" name="email" 
 
-                <label for="celular">Celular</label> 
+                       placeholder="seu@email.com" required> 
 
-                <input type="tel" id="celular" name="celular" placeholder="Digite seu celular" required> 
+  
 
- 
- 
+                <label for="telefone">Telefone</label> 
+
+                <!-- type="tel" é ideal para telefone (teclado numérico no celular) --> 
+
+                <input type="tel" id="telefone" name="telefone" 
+
+                       placeholder="(51) 99999-9999"> 
+
+  
 
                 <label for="cidade">Cidade</label> 
 
-                <input type="text" id="cidade" name="cidade" value="Porto Alegre" readonly> 
+                <!-- value já preenche o campo com um valor inicial --> 
 
- 
- 
+                <input type="text" id="cidade" name="cidade" value="Porto Alegre"> 
+
+  
 
                 <label for="interesse">O que te interessa?</label> 
 
-                <select id="interesse" name="interesse" required> 
+                <!-- 
 
-                    <option value="">Selecione</option> 
+                  <select> cria uma lista suspensa (dropdown). 
+
+                  Cada <option> é uma escolha. value é o dado enviado; 
+
+                  o texto entre as tags é o que o usuário vê. 
+
+                --> 
+
+                <select id="interesse" name="interesse"> 
 
                     <option value="gastronomia">🍽️ Gastronomia</option> 
 
@@ -262,64 +322,97 @@
 
                     <option value="servicos">💆 Serviços</option> 
 
-                    <option value="parceria">🤝 Parceria</option> 
+                    <option value="parceiro">🤝 Quero ser parceiro</option> 
 
                 </select> 
 
- 
- 
+  
 
                 <p>Você é:</p> 
 
-                <input type="radio" id="usuário" name="tipo" value="usuário" checked> 
+                <!-- 
 
-                <label for="usuário">Usuário</label> 
+                  type="radio" → escolha ÚNICA. Campos com o MESMO name 
 
- 
- 
+                  formam um grupo: só um pode ser marcado por vez. 
+
+                  checked → já vem selecionado por padrão. 
+
+                --> 
+
+                <input type="radio" id="usuario" name="tipo" value="usuario" checked> 
+
+                <label for="usuario">Usuário</label> 
+
+  
 
                 <input type="radio" id="empresa" name="tipo" value="empresa"> 
 
                 <label for="empresa">Empresa</label> 
 
- 
- 
+  
+
+                <!-- <br> insere uma quebra de linha --> 
 
                 <br> 
 
- 
- 
+  
+
+                <!-- 
+
+                  type="checkbox" → caixa de marcar/desmarcar. 
+
+                  Aqui com required: o usuário precisa aceitar para enviar. 
+
+                --> 
 
                 <input type="checkbox" id="aceite" name="aceite" required> 
 
-                <label for="aceite">Aceito receber novidades e ofertas do Oportuni.</label> 
+                <label for="aceite">Aceito receber novidades do Oportuni</label> 
 
- 
- 
+  
 
                 <label for="mensagem">Mensagem</label> 
 
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="4"></textarea> 
+                <!-- 
 
- 
- 
+                  <textarea> é um campo de texto GRANDE (várias linhas). 
 
-                <button type="submit">Enviar</button> 
+                  rows define a altura inicial em linhas. 
+
+                --> 
+
+                <textarea id="mensagem" name="mensagem" rows="5" 
+
+                          placeholder="Conte o que você procura"></textarea> 
+
+  
+
+                <!-- type="submit" envia o formulário ao clicar --> 
+
+                <button type="submit">Enviar cadastro</button> 
+
+  
 
             </form> 
 
- 
- 
-
         </section> 
+
+  
 
     </main> 
 
-    <!-- RODAPÉ --> 
+  
 
-    <footer id="contato"> 
+    <!-- ============================================================ 
 
-        <!-- contato e direitos --> 
+         RODAPÉ DA PÁGINA 
+
+         <footer> agrupa o fim do site: contato, redes e direitos. 
+
+         ============================================================ --> 
+
+    <footer> 
 
         <h2>Fale com a gente</h2> 
 
@@ -327,9 +420,15 @@
 
         <p>Porto Alegre, RS</p> 
 
+  
+
         <h3>Redes sociais</h3> 
 
+        <!-- <ul> é lista NÃO ordenada: a ordem dos itens não importa --> 
+
         <ul> 
+
+            <!-- target="_blank" abre o link em uma NOVA aba --> 
 
             <li><a href="https://instagram.com" target="_blank">Instagram</a></li> 
 
@@ -339,17 +438,22 @@
 
         </ul> 
 
+  
+
+        <!-- <hr> desenha uma linha horizontal de separação --> 
+
         <hr> 
 
-        <p>&copy; 2026 Oportuni. Todos os direitos reservados.</p>          
+  
+
+        <!-- &copy; é uma ENTIDADE HTML que vira o símbolo © --> 
+
+        <p>&copy; 2026 Oportuni. Todos os direitos reservados.</p> 
 
     </footer> 
 
+  
+
 </body> 
 
- 
- 
-
-</html> 
-
- 
+</html>
